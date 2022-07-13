@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&family=Roboto+Condensed:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,700&family=Montserrat:ital,wght@1,500&family=Roboto+Condensed:wght@700&display=swap"
+    rel="stylesheet">
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .attribution {
+      font-size: 18px;
+      text-align: center;
+      background-color: #0c1952;
+      color: white;
+      width: 30rem;
+      height: 3rem;
+      padding-top: 13px;
+      top: 4%;
+      left: 35%;
+      position: absolute;
+    }
+
+    .attribution a {
+      color: hsl(64, 90%, 49%);
+      text-decoration: none;
+    }
+
+    .Main {
+      background-color: hsl(31, 30%, 85%);
+      height: 100vh;
+    }
+
+    .box {
+      display: flex;
+      top: 22%;
+      left: 33%;
+      position: absolute;
+
+    }
+
+    .box img {
+      height: 25rem;
+      border-radius: 7px 0 0 7px;
+      width: 17rem;
+    }
+
+    .info {
+      flex-wrap: nowrap;
+      background-color: white;
+      width: fit-content;
+      height: 25rem;
+      width: 18rem;
+      border-radius: 0px 7px 7px 0px;
+      padding: 20px 36px 4px 35px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    button {
+      background-color: hsl(158, 36%, 37%);
+      color: white;
+      height: 2.5rem;
+      width: 13.5rem;
+      border-radius: 8px;
+      border: white;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: hsl(157, 38%, 30%);
+
+    }
+
+    .dollar {
+      color: hsl(158, 36%, 37%);
+      font-size: xx-large;
+      font-weight: bolder;
+      cursor: pointer;
+    }
+
+    .dollar:hover {
+      color: hsl(157, 35%, 22%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="Main">
+    <div class="box">
+      <img src="images/image-product-desktop.jpg" alt="" class="perfume">
+      <div class="info">
+        <p style="font-family: 'Montserrat', sans-serif;font-size: medium;">PERFUME
+          <br>
+        </p>
+        <p style=" font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto Condensed', sans-serif; font-size: 2rem;">Gabrielle Essence Eau De Parfum </p>
+
+        <p style="font-family: 'Fraunces';font-size: 14px;">
+          A floral, solar and voluptuous interpretation composed by Olivier Polge,
+          Perfumer-Creator for the House of CHANEL.</p>
+        <div style="display: flex; gap: 20px">
+          <span class="dollar">$149.99</span>
+          <span style="padding-top: 10px; text-decoration: line-through; font-family: 'Fraunces'; color: gray;">
+            $169.99</span>
+        </div>
+
+
+
+        <button>
+          <span style="justify-content:flex-start ;"><svg width="15" height="16" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z"
+                fill="#FFF" /></svg></span> Add to Cart</button>
+
+
+      </div>
+
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a
+        href="https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa/hub/product-preview-card-component-GeHnSbumvU"
+        target="_blank">Ahsan khalid</a>.
+    </div>
+  </div>
+
+
+
+
+</body>
+
+</html>
